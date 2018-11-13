@@ -22,7 +22,7 @@ warnings.filterwarnings("ignore", message="numpy.dtype size changed")
 
 def connect():
     #connect to mongodb
-    client = MongoClient('mongodb://addr')
+    client = MongoClient('mongodb://ADDR')
     db = client['reviews']
     collection = db['reviews']
     return collection
@@ -169,7 +169,7 @@ print len(reviews)
 if __name__ == '__main__':
 
     #connect to mongodb for creating cIds_list
-    client = MongoClient('mongodb://ms:kmubigdata2018@203.246.113.16:6235/')
+    client = MongoClient('mongodb://ADDR')
     db = client['reviews']
     collection = db['reviews']
 
