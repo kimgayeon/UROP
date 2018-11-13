@@ -22,7 +22,7 @@ warnings.filterwarnings("ignore", message="numpy.dtype size changed")
 
 def connect():
     #connect to mongodb
-    client = MongoClient('mongodb://ms:kmubigdata2018@203.246.113.16:6235/')
+    client = MongoClient('mongodb://addr')
     db = client['reviews']
     collection = db['reviews']
     return collection
